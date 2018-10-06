@@ -35,7 +35,7 @@ public:
   CDnsSeedOpts() : nThreads(96), nDnsThreads(4), nPort(53), mbox(NULL), ns(NULL), host(NULL), tor(NULL), fUseTestNet(false), fWipeBan(false), fWipeIgnore(false), ipv4_proxy(NULL), ipv6_proxy(NULL) {}
 
   void ParseCommandLine(int argc, char **argv) {
-    static const char *help = "Phore-seeder\n"
+    static const char *help = "helium-seeder\n"
                               "Usage: %s -h <host> -n <ns> [-m <mbox>] [-t <threads>] [-p <port>]\n"
                               "\n"
                               "Options:\n"
@@ -397,7 +397,7 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"dns0.phore.io", "dns1.phore.io", "dns2.phore.io", "dns3.phore.io", "dns4.phore.io", "dns5.phore.io", ""};
+static const string mainnet_seeds[] = {"dns0.heliumchain.org", "dns1.heliumchain.org", "dns2.heliumchain.org", "dns3.heliumchain.org", "dns4.heliumchain.org", "dns5.heliumchain.org", ""};
 static const string testnet_seeds[] = {""};
 static const string *seeds = mainnet_seeds;
 
